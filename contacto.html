@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Website</title>
+  <link rel="stylesheet" href="contacto.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="" alt="Logo">
+      <ul class="nav-links">
+        <li class="nav-link services">
+          <a href="#">
+            Nosso Trabalho
+            <span class="material-icons dropdown-icon">
+              arrow_drop_down
+            </span>
+          </a>
+          <ul class="drop-down">
+            <li><a href="comoSaberSeÉumaVítima.html">Como saber se é uma vítima</a></li>
+            <li><a href="comoReagir.html">Como reagir</a></li>
+            <li><a href="comoComunicar.html">Como comunicar</a></li>
+          </ul>
+        </li>
+        <li class="nav-link"><a href="sobre.html">Sobre</a></li>
+        <li class="nav-link"><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-container">
+      <div class="contact-left">
+        <p><i class="fas fa-paper-plane"></i> email</p>
+        <p><i class="fas fa-phone-square-alt"></i> telemovel</p>
+        <p><i class="fas fa-map-marker-alt"></i> cidade, conselho, escola</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com" target="_blank" class="social-icon">
+            <img src="/Images/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" class="social-icon">
+            <img src="/Images/tik-tok.png" alt="TikTok">
+          </a>
+          <a href="https://www.youtube.com" target="_blank" class="social-icon">
+            <img src="/Images/youtube.png" alt="YouTube">
+          </a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="NAME" placeholder="Nome" required>
+          <input type="email" name="EMAIL" placeholder="Email" required>
+          <textarea name="MESSAGE" rows="6" placeholder="Mensagem"></textarea>
+          <button type="submit" class="btn btn2">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="copyright">
+      <p>Copyright © CyberPaz.</p>
+    </div>
+  </footer>
+</body>
+</html>

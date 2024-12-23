@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1E1E1E;
+  background-color: #F5F5F5;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  margin-left: 2rem;
+  list-style: none;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-link a {
+  color: #1E1E1E;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #531A88;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.95s;
+}
+
+.nav-link:hover a::after {
+  width: 50%;
+}
+
+.services a {
+  display: flex;
+  align-items: center;
+}
+
+.services .dropdown-icon {
+  font-size: 18px;
+  position: relative;
+  right: -5px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out all;
+}
+
+.services:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.drop-down {
+  position: absolute;
+  padding: 0.5rem 0;
+  margin: 0.5rem -0.5rem;
+  background: #fff;
+  color: #1E1E1E;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  font-size: 14px;
+  display: none;
+  z-index: 1;
+}
+
+.services:hover .drop-down {
+  display: block;
+}
+
+.drop-down li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+/* Sidebar Styles */
+/* Sidebar styles go here */
+
+/* Main Content Styles */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.content-area {
+  width: 35%;
+}
+
+.content-area h1 {
+  font-size: 15rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #531A88;
+}
+
+.content-area p {
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon:hover {
+  transform: translateY(-10px);
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #D9D9D9;
+  border-radius: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
